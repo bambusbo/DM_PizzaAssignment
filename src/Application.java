@@ -1,9 +1,15 @@
 import java.util.Scanner;
 
 /**
+ * An application to manage orders for a pizzeria
+ *<p>
+ * https://github.com/bambusbo/DM_PizzaAssignment
+ *
  * @author  Morten Kristensen, Tester: Vanda
  * @version 1.0
  * @since   07/10/2020
+ *
+ *
  */
 
 public class Application {
@@ -50,7 +56,7 @@ public class Application {
 
 
 
-    /** Main method to control everything */
+
     public static void main(String[] args) {
         selectPizzaFromMenu();
         flushConsole();
