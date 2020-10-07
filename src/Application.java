@@ -27,23 +27,23 @@ public class Application {
     static double pizzaPrice = 0;
 
     // Setup all pizzas as static strings, and setup a price variable as a double for each.
-    static String margherita = "1. Margherita: Tomato, Cheese"; static double margheritaPrice = 55;
-    static String hawaii = "2. Hawaii: Tomato, Cheese, Ham, Pineapple"; static double hawaiiPrice = 60;
-    static String atlanta = "3. Atlanta: Tomato, Cheese, Ham, Bacon"; static double atlantaPrice = 55;
-    static String virginia = "4. Virginia: Tomato, Cheese, Ham, Bacon, Pineapple"; static double virginiaPrice = 60;
-    static String chickenSupreme = "5. Chicken Supreme: Chicken, Mushrooms, Onion"; static double chickenSupremePrice = 60;
-    static String meatFeast = "6. Meat Feast: Tomato, Cheese, Pepperoni, Ham, Beef, Chicken"; static double meatFeastPrice = 55;
-    static String veggie = "7. Veggie: Tomato, Cheese, Spinach, Sweetcorn, Peppers, Mushrooms"; static double veggiePrice = 65;
-    static String theGoat = "8. The G.O.A.T: Tomato, Cheese, Caramelised Onions, Spinach, Balsamic Drizzle"; static double theGoatPrice = 85;
-    static String pepperoniFeast = "9. Pepperoni Feast: Tomato, Cheese, Ham, Double Pepperoni"; static double pepperoniFeastPrice = 75;
-    static String supreme = "10. Supreme: Tomato, Cheese, Chicken, Beef, Black Olives, Peppers, Red Onions"; static double supremePrice = 70;
+    static final String margherita = "1. Margherita: Tomato, Cheese"; static final double margheritaPrice = 55;
+    static final String hawaii = "2. Hawaii: Tomato, Cheese, Ham, Pineapple"; static final double hawaiiPrice = 60;
+    static final String atlanta = "3. Atlanta: Tomato, Cheese, Ham, Bacon"; static final double atlantaPrice = 55;
+    static final String virginia = "4. Virginia: Tomato, Cheese, Ham, Bacon, Pineapple"; static final double virginiaPrice = 60;
+    static final String chickenSupreme = "5. Chicken Supreme: Chicken, Mushrooms, Onion"; static final double chickenSupremePrice = 60;
+    static final String meatFeast = "6. Meat Feast: Tomato, Cheese, Pepperoni, Ham, Beef, Chicken"; static final double meatFeastPrice = 55;
+    static final String veggie = "7. Veggie: Tomato, Cheese, Spinach, Sweetcorn, Peppers, Mushrooms"; static final double veggiePrice = 65;
+    static final String theGoat = "8. The G.O.A.T: Tomato, Cheese, Caramelised Onions, Spinach, Balsamic Drizzle"; static final double theGoatPrice = 85;
+    static final String pepperoniFeast = "9. Pepperoni Feast: Tomato, Cheese, Ham, Double Pepperoni"; static final double pepperoniFeastPrice = 75;
+    static final String supreme = "10. Supreme: Tomato, Cheese, Chicken, Beef, Black Olives, Peppers, Red Onions"; static final double supremePrice = 70;
 
     //List of all toppings
-    static String cheeseTopping = "1. Cheese";
-    static String chiliTopping = "2. Chili";
-    static String baconTopping = "3. Bacon";
-    static String tunaTopping = "4. Tuna";
-    static String lettuceTopping = "5. Lettuce";
+    static final String cheeseTopping = "1. Cheese";
+    static final String chiliTopping = "2. Chili";
+    static final String baconTopping = "3. Bacon";
+    static final String tunaTopping = "4. Tuna";
+    static final String lettuceTopping = "5. Lettuce";
 
     //Setup a spacing for the menu as a string, which we can reuse
     static String spacing = "%-80s %s \n";
@@ -53,7 +53,6 @@ public class Application {
 
     //Setup a boolean that will be used for repeating input prompts, in case an input is invalid
     static boolean again = true;
-
 
 
 
@@ -241,7 +240,7 @@ public class Application {
     }
     /** Method to print a receipt to the customer */
     public static void printReceipt() {
-        System.out.printf("You have chosen the following pizza:\n %s \n The size is: %s \n With the following toppings \n %s \n The final price is %.2f DKK\n \n", selectedPizza, selectedSize, selectedToppings, pizzaPrice);
+        System.out.printf("You have chosen the following pizza:\n %s \n The size is: %s \n With the following toppings: \n %s \n The final price is %.2f DKK\n \n", selectedPizza, selectedSize, selectedToppings, pizzaPrice);
         System.out.println("Enjoy your meal!");
     }
     /** Method that makes space in the console when called, so it is easier for the customer to read */
