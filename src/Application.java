@@ -92,7 +92,7 @@ public class Application {
         }
         else{
             in.next();
-            inputNo = 0;
+            inputNo = 0;      //We set this as 0, as all our switches has default cases that will catch 0
         }
     }
 
