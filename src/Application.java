@@ -5,7 +5,7 @@ import java.util.Scanner;
  *<p>
  * https://github.com/bambusbo/DM_PizzaAssignment
  *
- * @author  Morten Kristensen, Tester: Vanda
+ * @author  Morten Kristensen, Testers: Vanda, Denis
  * @version 1.0
  * @since   07/10/2020
  *
