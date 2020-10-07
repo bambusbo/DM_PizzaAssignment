@@ -58,6 +58,10 @@ public class Application {
 
 
     public static void main(String[] args) {
+        System.out.println("Welcome to Jan's Pizza!");
+        System.out.println("Contrary to popular beliefs, our G.O.A.T pizza doesn't actually contain goat meat!");
+        System.out.println("The prices listed are for standard sizes \n");
+        System.out.println("Select a pizza from the list below by typing the associated number below \n");
         selectPizzaFromMenu();
         flushConsole();
         System.out.printf("You have chosen the following pizza:\n %s \n  \n", selectedPizza);
@@ -94,9 +98,6 @@ public class Application {
 
     /** Method to ask the customer which pizza they want */
     public static void selectPizzaFromMenu() {
-        System.out.println("Welcome to Jan's Pizza!");
-        System.out.println("Select a pizza from the list below by typing the associated number below \n");
-        System.out.println("The prices listed are for standard sizes \n");
 
         System.out.printf(spacing, "Pizza", "Price in DKK");
 
