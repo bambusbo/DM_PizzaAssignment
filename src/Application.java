@@ -69,7 +69,7 @@ public class Application {
         flushConsole();
         System.out.printf("You have chosen the following pizza:\n %s \n The size is: %s \n The current price is %.2f DKK\n \n", selectedPizza, selectedSize, pizzaPrice);
 
-        System.out.println("Do you wish to add any extra toppings? Maximum 3 \n Each topping costs 5,- DKK\n Type y for yes and n for no");
+        System.out.println("Do you wish to add any extra toppings? Maximum 3 \n Each topping costs 5,- DKK\n Type y for yes and anything else for no");
 
         //Ask if the customer wants topping
         toppingOption = in.next();
