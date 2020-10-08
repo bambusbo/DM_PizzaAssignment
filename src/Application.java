@@ -207,7 +207,8 @@ public class Application {
                 switch (inputNo) {
                     case 0:
                         again = false;
-                        break;
+                        selectedToppings = "None";
+                        return;
                     case 1:
                         selectedToppings += "\t" + cheeseTopping + "\n";
                         pizzaPrice = pizzaPrice + 5;
